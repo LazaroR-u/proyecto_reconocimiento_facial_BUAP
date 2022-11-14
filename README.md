@@ -1,14 +1,17 @@
 # proyecto_reconocimiento_facial_BUAP
 En este repositorio se realiza el proyecto de reconocimiento facial usando la base de datos de CelebA como parte del curso de Redes Neuronales otoño 2022 de la Facultad de Físico Matemáticas de la BUAP.
 
-##OBJETIVO:
+## OBJETIVO:
   1.  Entrenar  una  red  convolucional  para  predecir  los  atributos  de  la  basede datos CelebA que contiene imagenes de rostros etiquetadas con 40 atributos.
+  
   2.  Posteriormente  construir  un  modelo  con  las  capas  convolucionales  del modelo entrenado pero quitandole el   clasificador (capas densas del final).
+   
   3.  Aumentar un clasificador apropiado para distinguir solo si es el rostro o no (una sola neurona de salida).
+  
   4.  Congelar los pesos de la parte pre-entrenada (o primeras capas)5.  Entrenar este modelo.
 
 
-##DATASET
+## DATASET
 La base de datos consiste de una colección de 202,599 imagenes de rostros de celebridades y además un archivo de texto binario que tiene etiquetado 40 atributos de cada imagen, por ejemplo: 
 
 
