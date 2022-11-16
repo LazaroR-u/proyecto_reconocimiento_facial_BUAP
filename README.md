@@ -47,7 +47,7 @@ Para finalizar con este primer modelo, se entrenó con 10 epocas, con lo cual se
 ![image](https://user-images.githubusercontent.com/80428982/202064163-75f08693-ef34-4e16-913e-5e60a4ae1a93.png)
 
 
-## 2. MODELO CLASIFICADOR DE RECONOCIMIENTO FACIAL ✅❌
+## 2. MODELO 2: CLASIFICADOR DE RECONOCIMIENTO FACIAL ✅❌
 
 ### Procesamiento de datos
 En este caso volvemos a cargar los datos, los cuales serán imagenes. Para el conjunto de entrenamiento y de validación tenemos que deben estar las imagenes deben estar etiquetadas para poder entrenar el modelo, por ello hay dos carpetas en cada conjunto, una con fotos de nuestro rostro y otra con fotos de otras personas, por otro lado, para el conjunto de prueba estarán mezcladas las fotos de nosotros con las de otras personas para evaluar el modelo.
