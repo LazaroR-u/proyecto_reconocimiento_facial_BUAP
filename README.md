@@ -21,7 +21,7 @@ Se puede encontrar en el sitio de kaggle:
 https://www.kaggle.com/datasets/jessicali9530/celeba-dataset
 
 
-## 1. MODELO IDENTIFICAR DE ATRIBUTOS EN IMAGENES
+## 1. MODELO 1: IDENTIFICADOR DE ATRIBUTOS EN IMAGENES 📈
 ### Procesamiento de los datos de CelebA
 
 Una vez obtenida la base de datos e importadas las paqueterias, tenemos que cargar los dos tipos de datos: una carpeta con puras imagenes de rostros y un archivo de texto binario con los atributos de cada imagen. 
@@ -32,7 +32,7 @@ Comenzamos con el segundo porque al ser un archivo de texto con datos estructura
 Para las imagenes definimos la ruta en la que se encuentra la carpeta e iniciamos el procesamiento de imagenes que en este caso consiste en asignarle el nombre de la imagen, sus atributos y la imagen misma en un solo dato el cual llamamos imagen etiquetada, transformar la imagen de 3 canales RGB a un tensor en escala de grises, redimensionar la imagen y por ultimo normalizar la intensidad de los tonos de grises, el cual va de 0 (negro) a 255 (blanco).
 
 
-### Definición del modelo 
+### Estructura del modelo identificador 
 Una vez procesados los datos podemos comenzar con el modelo predictivo, el cual consiste de una secuencia de redes neuronales convolucionales 2D con su respectiva activación ReLu y un MaxPooling2D para procesar las matrices de imagenes y por ultimo se "aplana" la red para usar una red neuronal densa y una activación sigmoide que procese los datos para poder predecir si una imagen contiene o no cada atributo de los 40 considerados. 
 
 ![image](https://user-images.githubusercontent.com/80428982/202064225-03735a07-eb5f-47d8-b19f-ee916c80bb93.png)
@@ -47,7 +47,7 @@ Para finalizar con este primer modelo, se entrenó con 10 epocas, con lo cual se
 ![image](https://user-images.githubusercontent.com/80428982/202064163-75f08693-ef34-4e16-913e-5e60a4ae1a93.png)
 
 
-## 2. MODELO CLASIFICADOR DE RECONOCIMIENTO FACIAL
+## 2. MODELO CLASIFICADOR DE RECONOCIMIENTO FACIAL ✅❌
 
 ### Procesamiento de datos
 En este caso volvemos a cargar los datos, los cuales serán imagenes. Para el conjunto de entrenamiento y de validación tenemos que deben estar las imagenes deben estar etiquetadas para poder entrenar el modelo, por ello hay dos carpetas en cada conjunto, una con fotos de nuestro rostro y otra con fotos de otras personas, por otro lado, para el conjunto de prueba estarán mezcladas las fotos de nosotros con las de otras personas para evaluar el modelo.
