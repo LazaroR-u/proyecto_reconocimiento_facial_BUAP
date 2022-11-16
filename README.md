@@ -17,7 +17,8 @@ En este repositorio se realiza el proyecto de reconocimiento facial usando la ba
 La base de datos que se usa es la de CelebA, la cual consiste de:
   * Una colección de 202,599 imagenes de rostros de celebridades
   * Un archivo de texto binario que tiene etiquetado 40 atributos de cada imagen.
-Se puede encontrar en el sitio de kaggle: 
+  
+Esta base de datos y su documentacion se puede encontrar en el sitio de kaggle: 
 https://www.kaggle.com/datasets/jessicali9530/celeba-dataset
 
 
