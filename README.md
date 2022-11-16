@@ -78,9 +78,16 @@ Por ultimo, se entrena el modelo.
 ![image](https://user-images.githubusercontent.com/80428982/202093350-eda09380-f94f-45ee-a326-bb7e8953e837.png)
 
 
-Algunos problemas encontrados fueron al momento de procesar los datos del modelo 1 dado que la lista de atributos era un archivo de texto tipo estructurado pero separado por espacios en blanco, se tuvo que reemplazar los espacios en blanco por comas para poder tratarlo como un CSV con la paquetería de Pandas. 
-En el proceso del Modelo 2 hubo complicaciones desde el principio dado que al usar ImageDataGenerator no leía mis fotos, después de intentar arreglarlo me di cuenta que era por el tipo de formato, la clase ImageDataGenerator no lee formatos tipo .JFIF, por lo cual hubo que transformar el formato para poder procesarlo.  Por otra parte, en la generación de imágenes del modelo 2, me salió un error de que el directorio de una imagen mía no existía y por lo tanto no se podían generar nuevas imagenes, este error aún no sé cómo solucionarlo, así que decidí ir a lo seguro y usar la funcion flow_from_directory() la cual transforma las imagenes mientras se entrena, de esta forma pude entrenar el modelo. 
+Algunos problemas encontrados: 
+
+Al momento de procesar los datos del modelo 1, dado que la lista de atributos era un archivo de texto tipo estructurado pero separado por espacios en blanco, se tuvo que reemplazar los espacios en blanco por comas para poder tratarlo como un CSV con la paquetería de Pandas. 
+
+En el proceso del Modelo 2 hubo complicaciones desde el principio dado que al usar ImageDataGenerator no leía mis fotos, después de intentar arreglarlo me di cuenta que era por el tipo de formato, la clase ImageDataGenerator no lee formatos tipo .JFIF, por lo cual hubo que transformar el formato para poder procesarlo. 
+
+Por otra parte, en la generación de imágenes del modelo 2, me salió un error de que el directorio de una imagen mía no existía y por lo tanto no se podían generar nuevas imagenes, este error aún no sé cómo solucionarlo, así que decidí usar la funcion flow_from_directory() la cual transforma las imagenes mientras se entrena, de esta forma pude entrenar el modelo. 
 
 Conclusiones: 
-Antes de realizar este proyecto, desconocía lo versatil que puede ser trabajar con los modelos de redes neuronales, el poder crear un modelo nuevo a partir de otro ya entrenado es una herramienta muy poderosa que es escalable fuera del area de las imagenes. 
-Si bien trabajar con redes neuronales e imagenes puede ser abrumador porque todo tiene que encajar correctamente, también es verdad que conociendo las bases y leyendo la documentación correspondiente de keras, es posible tener una idea general de lo que sucede. 
+
+* Antes de realizar este proyecto, desconocía lo versatil que puede ser trabajar con los modelos de redes neuronales, el poder crear un modelo nuevo a partir de otro     ya entrenado es una herramienta muy poderosa que es escalable fuera del area de las imagenes. 
+
+* Si bien trabajar con redes neuronales e imagenes puede ser abrumador porque todo tiene que encajar correctamente, también es verdad que conociendo las bases y         leyendo la documentación correspondiente de keras, es posible tener una idea general de lo que sucede. 
