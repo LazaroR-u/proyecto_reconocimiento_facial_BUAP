@@ -1,4 +1,4 @@
-# 🚀 PROYECTO RECONOCIMIENTO FACIAL CON CELEBA Y PYTHON. BUAP.
+# 🚀 PROYECTO RECONOCIMIENTO FACIAL CON CELEBA Y PYTHON. 
 En este repositorio se realiza el proyecto de reconocimiento facial usando la base de datos de CelebA.
 
 ## 🔎 OBJETIVO:
